@@ -42,8 +42,8 @@ class LinkedList:
         prev = None
         current = self.head 
         while(current is not None): 
-            next = current.next_node
+            next_up = current.next_node
             current.next_node = prev 
             prev = current 
-            current = next
+            current = next_up
         self.head = prev
